@@ -6,3 +6,11 @@ $grid-max-width: 65em;
 // breakpoints
 $breakpoint-small: "only screen and (min-width: 20em)";
 $breakpoint-medium: "only screen and (min-width: 30em)";
+
+@for $i from 1 through 12 {
+
+    .column-#{$i} {
+
+        }
+
+}

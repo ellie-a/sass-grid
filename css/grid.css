@@ -1,6 +1,18 @@
+.wrapper,
+.row {
+  *zoom: 1; }
+  .wrapper:before,
+  .row:before, .wrapper:after,
+  .row:after {
+    content: " ";
+    display: table; }
+  .wrapper:after,
+  .row:after {
+    clear: both; }
+
 *,
 *:after,
-*::before {
+*:before {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -21,13 +33,7 @@ img {
 
 .wrapper {
   width: 100%;
-  max-width: 0 auto; }
-
-.wrapper:after,
-.row:after {
-  content: "";
-  display: table;
-  clear: both; }
+  max-width: 65em; }
 
 [class*='column-'] {
   float: left;
